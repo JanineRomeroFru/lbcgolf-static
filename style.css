@@ -1,0 +1,333 @@
+@charset "UTF-8"; 
+
+/* Fonts */
+@import "fonts/style.css"; 
+
+/* Base */
+* { margin:0; padding:0; outline:0; border:0; }
+
+body { text-align:center; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#333; min-width:320px; }
+p { line-height:18px; margin-bottom:15px; }
+h1 { font-size:16px; margin-bottom:10px; font-family:'Gotham', Helvetica, Arial, sans-serif; }
+h2 { font-size:14px; margin:0 0 3px 0; }
+a { color:#fff; }
+a:hover { color:#ccc; }
+img { max-width:100%; }
+ul, ol { margin-left:20px; }
+.clear { clear:both; height:0px; }
+
+/* Layout */
+.header, .content, #mainNav, #footer, #footerHome, .row { width:825px; max-width:100%; margin:0 auto; }
+
+.header { text-align:left; margin:10px auto 0 auto; }
+.content { border:1px solid #fff; border-width:0 1px; margin:0 auto; text-align:left; }
+.content.white { background-color:#fff; }
+
+.leftColContent, .details1, .leftCol, .rightCol, #footerHome .leftCol, #footer .leftCol, .content, .bookingBoxes>div { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#row1 .content { background-color:#519bc0; border-bottom:0; }
+#row2 .content.white, #mainContent .content { padding:20px; border-top:1px solid #fff; }
+#row2 .content.white:after { clear:both; content:" "; display:table; }
+
+#row1Home { background-color:#292929; }
+#row2Home { background-color:#307a9f; }
+#row1 { background-color:#307a9f; }
+#mainContent, #row2 { background-color:#e3e3e3; }
+
+#row2 .leftColContent { width:59%; float:left; color:#666666; font-size:14px; padding-right:20px; padding-bottom:20px; }
+#row2 .leftColContent.full { width:85%; }
+#row2 .rightCol { width:35%; float:right; background:#3d3d3d; margin-bottom:20px; padding:20px; color:#fff; }
+#row2 .longSidebar .leftColContent { width:52%; }
+#row2 .longSidebar .rightCol { width:48%; }
+#row2 .rightCol.details { width:100%; }
+.details1 { width:375px; float:left; background:#3d3d3d; margin:20px 0px; }
+
+#row2 .dark-bg { background:#292929; }
+#row2 .dark-bg .content { border-top:1px solid #fff; }
+
+.fullCol { padding:20px; }
+
+#row2 a { color:#3399CC; text-decoration:underline; }
+#row2 a:hover { color:#69b9e1; }
+#ro2 .rightCol p { margin-bottom:0; }
+ul.content_list { margin-bottom:10px; list-style:disc; }
+ul.content_list li { padding-bottom:10px; list-style:disc; }
+
+/* ----- MAIN NAVIGATION ------ */
+#mainNav { height:19px; margin:5px auto 0; text-align:left; }
+#mainNav span { display:none; visibility:hidden; }
+#mainNav li { float:left; margin:0; height:9px; list-style-type:none; }
+#mainNav a { display:block; float:left; height:9px; }
+#nav1 a { width:56px; background:url(images/nav_01.gif) 0 18px; margin-left:4px; }
+#nav1 a:hover { background:url(images/nav_01.gif) 0 -18px; }
+#nav1 a.active { background:url(images/nav_01.gif) 0 9px; }
+#nav2 a { width:51px; background:url(images/nav_02.gif) 0 18px; margin-left:20px; }
+#nav2 a:hover { background:url(images/nav_02.gif) 0 -18px; }
+#nav2 a.active { background:url(images/nav_02.gif) 0 9px; }
+#nav3 a { width:34px; background:url(images/nav_03.gif) 0 18px; margin-left:20px; }
+#nav3 a:hover { background:url(images/nav_03.gif) 0 -18px; }
+#nav3 a.active { background:url(images/nav_03.gif) 0 9px; }
+#nav4 a { width:79px; background:url(images/nav_04.gif) 0 18px; margin-left:20px; }
+#nav4 a:hover { background:url(images/nav_04.gif) 0 -18px; }
+#nav4 a.active { background:url(images/nav_04.gif) 0 9px; }
+#nav5 a { width:73px; background:url(images/nav_05.gif) 0 18px; margin-left:20px; }
+#nav5 a:hover { background:url(images/nav_05.gif) 0 -18px; }
+#nav5 a.active { background:url(images/nav_05.gif) 0 9px; }
+#nav6 a { width:49px; background:url(images/nav_06.gif) 0 18px; margin-left:20px; }
+#nav6 a:hover { background:url(images/nav_06.gif) 0 -18px; }
+#nav6 a.active { background:url(images/nav_06.gif) 0 9px; }
+#nav7 a { width:38px; background:url(images/nav_07.gif) 0 18px; margin-left:20px; }
+#nav7 a:hover { background:url(images/nav_07.gif) 0 -18px; }
+#nav7 a.active { background:url(images/nav_07.gif) 0 9px; }
+#nav8 a { width:52px; background:url(images/nav_08.gif) 0 18px; margin-left:20px; }
+#nav8 a:hover { background:url(images/nav_08.gif) 0 -18px; }
+#nav8 a.active { background:url(images/nav_08.gif) 0 9px; }
+
+#primaryNav { text-align:left; font-size:0; font-family:'Gotham', Helvetica, Arial, sans-serif; line-height:1; margin-bottom:5px; }
+#primaryNav li, #primaryNav a { float:none; display:inline-block; }
+#primaryNav a { font-size:11px; font-weight:900; text-transform:uppercase; color:#666; padding:4px 8px; text-decoration:none; }
+#primaryNav a:hover { color:#3399cc; }
+#primaryNav li:first-child a { padding-left:3px; }
+
+/* ----- IMAGE BOX WITH GREY BARS ------ */
+.container { position:relative; overflow:hidden; height:423px; }
+.container2 { position:relative; overflow:hidden; height:317px; }
+.imageBg { position:absolute; top:0; left:0; z-index:0; }
+.courses, .info { background-color:#000000; position:absolute; z-index:1; opacity:.8; filter:alpha(opacity=80); overflow:hidden; }
+.courses { top:0; left:0; padding:7px 0px; text-align:center; }
+.courses img { }
+.info { bottom:-11px; left:0px; padding:10px 0px; }
+.courseLogo { margin:0px 35px 0 35px; cursor:pointer; cursor:hand; }
+.courseLogo:hover { opacity:.7; filter:alpha(opacity=70); }
+.imgTitle { float:left; margin-left:10px; }
+
+/* ----- HOME PAGE ROW2 ------ */
+#mainContent .content.home { padding:0; }
+#row2Home .content { border-top:1px solid white; background-color:#3399cc; color:#fff; }
+#row2Home .leftCol { width:590px; float:left; margin:20px; }
+.leftCol img { margin-bottom:10px; }
+#row2Home ul.rightCol { float:right; width:134px; margin:50px 20px 10px 0px; }
+#row2Home .rightCol li { list-style-type:none; height:10px; margin-bottom:10px; }
+#row2Home .rightCol a { display:block; height:10px; }
+
+/* ----- SUBNAV ROLLOVERS ------ */
+#row2Home .rightCol a { color:#fff; font-size:11px; text-decoration:none; font-family:'Gotham'; text-transform:uppercase;}
+
+/* ----- MAIN CONTENT ------ */
+#mainContent .content { background-color:#fff; }
+#mainContent .leftCol { float:left; width:60%; }
+#mainContent .rightCol { float:right; background-color:#292929; width:35%; color:#fff; height:auto; padding-bottom:20px; }
+#mainContent .rightCol h1 { margin:20px 0 0 20px; }
+#mainContent .rightCol p { margin:0 20px 0 20px; }
+#mainContent .rightCol .courseIcons { margin:40px 20px 20px 20px; }
+
+#mainContent .leftCol h1 { margin-bottom:20px; }
+#mainContent .leftCol a { color:#666666; }
+
+/* ----- CONTENT ------ */
+.row1head { margin:70px 0 20px 20px; }
+div.row1head { margin:0; }
+div.row1head h1 { padding:67px 0 18px 20px; margin:0; color:#fff; font-size:25px; font-weight:400; line-height:1; }
+
+.leftCol2, .rightCol2, .leftCol3, .rightCol3 { margin-bottom:40px; color:#555; }
+.leftCol2 { width:60%; float:left; }
+.rightCol2, .rightCol3 { width:35%; float:right; }
+.leftCol3 { width:50%; float:left; }
+
+.leftCol3 ul, .rightCol3 ul { margin:5px 0 0 15px; }
+.leftCol3 li { margin-bottom:3px; }
+.rightCol2 iframe { float:right; width:100%; }
+.teeTable { width:260px; margin:20px 0px; }
+.teeTable td { padding:1px; }
+.teeTable th { font-size:14px; }
+.left { float:left; }
+
+.mapInfo { z-index:1; }
+.info .leftCol { float:left; width:50%; color:#ffffff; }
+.info .leftCol h1 { margin:0px; }
+.courseIcon { float:left; margin:0px 15px; }
+
+.featuredIntro { color:#fff; background-color:#525252; padding:20px; }
+.featuredIntro p { margin-bottom:0; }
+.bookingBoxes { border-top:1px solid #fff; color:#65cbfe; }
+.bookingBoxes p { font-size:15px; padding-right:95px; margin-bottom:5px; }
+.bookingBoxes h2 { color:#00ccff; font-size:39px; line-height:1; font-weight:400; letter-spacing:-1px; margin-left:-3px; margin-bottom:12px; }
+.bookingBoxes, .bookingBoxes h2 { font-family:'Gotham', Helvetica, Arial, sans-serif; }
+.bookingBoxes .white, #row2 .bookingBoxes a { color:#fff; }
+#row2 .bookingBoxes a { display:block; text-decoration:none; font-weight:700; margin-bottom:3px; }
+#row2 .bookingBoxes a:hover span { text-decoration:underline; }
+.bookingBoxes .box:first-child { border-right:1px solid #fff; }
+.bookingBoxes .box { padding:16px 30px; width:50%; height:231px; float:left; position:relative; background: #2f8cbc; background: -moz-linear-gradient(top, #2f8cbc 0%, #2f8cbc 50%, #1f5c7b 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f8cbc), color-stop(50%,#2f8cbc), color-stop(100%,#1f5c7b)); background: -webkit-linear-gradient(top, #2f8cbc 0%,#2f8cbc 50%,#1f5c7b 100%); background: -o-linear-gradient(top, #2f8cbc 0%,#2f8cbc 50%,#1f5c7b 100%); background: -ms-linear-gradient(top, #2f8cbc 0%,#2f8cbc 50%,#1f5c7b 100%); background: linear-gradient(to bottom, #2f8cbc 0%,#2f8cbc 50%,#1f5c7b 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f8cbc', endColorstr='#1f5c7b',GradientType=0 ); }
+.bookingBoxes .box:hover { background: #216385; background: -moz-linear-gradient(top, #216385 0%, #216385 50%, #153f55 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#216385), color-stop(50%,#216385), color-stop(100%,#153f55)); background: -webkit-linear-gradient(top, #216385 0%,#216385 50%,#153f55 100%); background: -o-linear-gradient(top, #216385 0%,#216385 50%,#153f55 100%); background: -ms-linear-gradient(top, #216385 0%,#216385 50%,#153f55 100%); background: linear-gradient(to bottom, #216385 0%,#216385 50%,#153f55 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#216385', endColorstr='#153f55',GradientType=0 ); }
+
+.map { position:relative; width:100%; height:400px; }
+.map img { max-width:none !important; }
+
+.mobile-map { display:none; }
+.mobile-map a { color:#fff; }
+.mobile-map .item { min-height:70px; background:#444; border-bottom:1px solid #999; clear:both; }
+.mobile-map img { float:left; padding:10px 15px; width:50px; }
+.mobile-map .text { padding:17px 0 0; font-size:15px; }
+.mobile-map .links { left:0; top:0; float:right; padding-right:15px; padding-top:20px; font-size:13px; }
+
+/* ----- FOOTERS ------ */
+.content.footer { padding:0 !important; }
+#footer { font-size:10px; text-align:left; color:#666666; }
+#footer .leftCol { float:left; width:35%; padding:20px; padding-right:0; }
+#footer .rightCol { float:right; width:65%; padding:20px; margin-left:0; text-align:right; background-color:#fff; }
+#footer .rightCol li { list-style-type:none; display:inline; padding:0px 1px; }
+#footer .rightCol a { color:#666666; }
+
+/* * * */
+.miniNav { margin-left:20px; }
+.miniNav li { display:inline; }
+.miniNav a { text-transform:uppercase; color:#8ab6cc; text-decoration:none; }
+.miniNav a:hover { color:#82922e; }
+.miniNav img { float:left; }
+div.miniNav { height:50px; margin-top:20px; }
+div.miniNav a.left { padding:10px 0 0 20px; display:block; float:left; }
+ul.locationsList { margin-left:5px; }
+.locationsList li { float:left; list-style-type:none; padding:5px 2px 20px 2px; }
+ div.head { text-transform:uppercase; color:#8ab6cc; padding-top:15px; border-bottom:0px; }
+
+/* ----- TABLES OH, THE TABLES ------ */
+.rates td, .golfClub td, .golfRates td { padding:2px 0 2px 2px; border-bottom:1px solid #494949; color:#fff; }
+.rates th { border-bottom:1px solid #8ab6cc; text-align:left; color:#8ab6cc; }
+tr.head td { text-transform:uppercase; color:#8ab6cc; padding-top:8px; border-bottom:0px; }
+tr.head2 td { text-transform:uppercase; color:#8ab6cc; padding-bottom:8px; border-bottom:1px solid #8ab6cc; margin-bottom:10px; }
+td.colRight, th.colRight { text-align:right; width:20%; }
+.contact td { padding:2px 0px; color:#fff; vertical-align:top; }
+input.formfields, textarea.formfields  { background-color:#666666; border:1px solid #333333; width:200px; }
+td.green, .green { color:#8ab6cc; font-weight:normal; text-decoration:none; }
+td.whiteContact, .whiteContact { color:#ffffff; font-weight:normal; text-decoration:none; }
+.formButton { background-color:#8ab6cc; color:#fff; text-transform:uppercase; border:0px; width:200px; padding:5px 0px; border:1px solid #333333; }
+table.golfClub { width:320px; }
+.golfClub td.nb { border-bottom:0px; }
+.golfClub .pt td { padding-top:30px; }
+th.greenhead { color:#8ab6cc; font-weight:normal; padding-top:10px; }
+
+/* ----- MININAVS ------ */
+.info ul { float:right; margin:5px 10px 0 0; }
+.info ul.detailsLinks { float:right; margin:60px 10px 0 0; }
+.info li { float:left; list-style-type:none; }
+
+a.bookIt { color:#0F75BC; }
+a.bookIt:hover { color:#8ab6cc; }
+
+#tipDiv .text, #tipDiv .bg, #tipDiv .map .logo, #tipDiv .links { position:absolute; z-index:11; text-align:left; display:block; white-space:nowrap; }
+#tipDiv { width:210px; position:relative; }
+#tipDiv .logo { position:absolute; z-index:12; }
+
+.logo { top:8px; left:14px; }
+.links { top:20px; left:120px; }
+.links ul { margin-left:0; }
+.links a { text-decoration:none; text-transform:uppercase; font-size:.85em; }
+.links a:hover { color:#8ab6cc; }
+.text { top:82px; left:14px; font-weight:bold; color:#fff; }
+.dot { cursor:pointer; cursor:hand; }
+li span { display:block; }
+li { list-style-type:none; }
+
+#map1, #map2, #map3, #map4, #map5, #map6, #map7, #map8 { position:absolute; top:-2500px; left:-2500px}
+
+/* ----- ADDED STYLES ------ */
+
+table.golfRates { width:745px; color:#ffffff; }
+.golfRates td.nb { border-bottom:0px; }
+.golfRates .pt td { padding-top:30px; }
+.golfRates .pt_sm td { padding-top:15px; }
+.golfRates th { text-align:center; }
+.golfRates .subCat th { padding-top:25px; }
+
+.golfRates td { padding:4px 0 4px 2px; border-bottom:1px solid #494949; color:#fff; }
+
+.golfRates .colCenter { text-align:center; }
+.golfRates .colLeft { text-align:left; }
+.golfRates .colRight { text-align:right; }
+.golfRates th.colRight { text-align:right; }
+
+ol.numbered_list li { list-style:decimal; padding-top:10px; }
+
+
+/* Updates */
+
+.info { font-family:'Gotham', Helvetica, Arial, sans-serif; }
+.info>span { font-size:17px; margin-left:10px; display:block; white-space:nowrap; overflow:hidden; text-overflow: ellipsis; }
+.info ul { font-size:11px; text-transform: uppercase; margin-top:-15px; }
+.info ul a { text-decoration:none !important; color:#eee !important; }
+.info ul li a span:before { content:"|"; padding:0 7px; }
+.info ul li:first-child a span:before { display:none; }
+.info.row, .info.row a { color:#fff; }
+
+#mobile-nav-toggle { float:right; padding:10px 12px; margin-top:10px; display:none; }
+#mobile-nav-toggle:hover { background:#eee; }
+#mobile-nav-toggle span { display:none; }
+#mobile-nav-toggle svg { width:36px; height:36px; fill:#444; }
+
+
+/* Responsiveness */
+@media screen and (max-width:860px) {
+	.header, .content, #mainNav, #footer, #footerHome, .row { width:700px; }
+	.header { margin-top:0; }
+
+	.container { height:305px; }
+	.container2 { height:290px; }
+	.courseLogo { margin:0 20px; }
+
+	#row2Home .leftCol { width:500px; }
+
+	.bookingBoxes p { padding-right:45px; font-size:14px; }
+
+	table.golfRates { width:100%; }
+
+	.mobile-map { display:block; }
+	.map.row { display:none; }
+}
+@media screen and (max-width:740px) {
+	.header, .content, #mainNav, #footer, #footerHome, .row { width:600px; }
+
+	#row2Home .rightCol, #mainContent .rightCol, #mainContent .leftCol, #row2 .rightCol, #row2 .leftColContent, #row2 .longSidebar .rightCol, #footer .leftCol, #footer .rightCol, .leftCol2, .leftCol3, #row2Home .leftCol { width:auto !important; }
+	#mainContent .leftCol, #row2 .leftColContent { padding-right:0; padding-bottom:0; }
+	.rightCol, .rightCol2, .rightCol3 { float:left !important; width:100% !important; }
+	#row2Home .rightCol { padding:0 20px 15px; margin:0 !important; }
+	#footer .leftCol { padding-top:15px; padding-bottom:10px; }
+	#footer .rightCol { padding-top:0 !important; text-align:left; }
+
+	#mobile-nav-toggle { display:block; }
+	body { overflow-x:hidden; }
+	#primaryNav { display:block; position:absolute; z-index:999; top:0; left:-240px; width:240px; height:100%; padding-top:25px; transition:0.4s all ease-in; }
+	#primaryNav.active { left:0; background:#eee; }
+	#mobile-nav-toggle.active { background:#ddd; }
+	#mobile-nav-toggle.active svg { fill:#000; }		
+	#primaryNav li { display:block; }
+	#primaryNav li a { display:block; font-size:20px; font-weight:400; padding:10px 15px !important; }
+
+	.bookingBoxes h2 { font-size:28px; }
+	.bookingBoxes p { padding-right:0; }
+
+	.golfRates { font-size:11px; }
+	.golfRates tr th.greenhead:first-child, .golfRates tr.pt td.nb { font-size:0; padding:0; width:0; }
+	.golfRates tr.pt td.nb img { display:none; }
+	.golfRates tr th.greenhead:first-child p, .golfRates tr.pt td.nb p { padding:0 !important; }
+	div.row1head h1 { padding-top:25px; padding-right:20px; }
+}
+@media screen and (max-width:620px) {
+	.header, .content, #mainNav, #footer, #footerHome, .row { width:500px; }
+
+	.container { height:260px; }
+	.container2 { height:240px; }
+
+	.bookingBoxes .box { width:100%; height:auto; }
+
+	.courseLogo { width:40px; height:auto; margin:0 9px; }
+
+	.imageBg { overflow:hidden; }
+	.imageBg img { height:100%; max-width:none; width:auto; }
+	.info ul { float:left; padding-top:5px; padding-left:10px; margin-top:0; }
+	.info>span { display:block; }
+	.info .leftCol { width:100%; }
+	.info ul.detailsLinks { display:block; float:left; width:auto; margin:0; padding:0 20px 10px; }
+}
+@media screen and (max-width:420px) {
+	#mobile-nav-toggle { margin-top:5px; margin-right:5px; }
+	.header .logo { width:220px; padding:5px 0 10px 10px; }
+}
